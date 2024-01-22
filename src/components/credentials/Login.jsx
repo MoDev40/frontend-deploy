@@ -8,6 +8,7 @@ import { setToken } from '@/lib/cookies'
 import { successToast, warningToast } from '@/lib/toasts'
 import { useNavigate } from 'react-router-dom'
 const Login = () => {
+  const navigate = useNavigate()
   const [formData,setFormData] = useState({
     username:"",
     password:"",
@@ -22,6 +23,7 @@ const Login = () => {
     }).catch((err)=>{
       warningToast(err.data?.message)
     }).finally(()=>{
+      navigate("/")
       window.location.reload()
     })
   }

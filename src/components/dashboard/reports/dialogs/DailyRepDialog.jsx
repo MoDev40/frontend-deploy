@@ -42,7 +42,7 @@ const DailyRepDialog = () => {
             <TableRow>
               <TableCell className="text-left">In</TableCell>
               <TableCell className="text-left">{report?.inTrans?.quantity}</TableCell>
-              <TableCell className="text-left">{report.intTrans&& '$'}{report?.inTrans?.price}</TableCell>
+              <TableCell className="text-left">{isSuccess&& '$'}{report?.inTrans?.price}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="text-left">Out</TableCell>
