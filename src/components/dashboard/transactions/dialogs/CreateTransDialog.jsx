@@ -30,7 +30,6 @@ const CreateTransDialog = ({item}) => {
         event.preventDefault();
         await createMutate(formData).unwrap().then((data)=>{
           successToast(data?.message)
-          window.location.reload()
           navigate('/dashboard/items')
         }).catch((error)=>{
           successToast(error.data?.message)
