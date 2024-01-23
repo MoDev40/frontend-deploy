@@ -73,7 +73,7 @@ const MonthRepDialog = () => {
         <TableFooter>
           <TableRow>
             <TableCell  colSpan={2}  className="text-left">Revenue</TableCell>
-            <TableCell  className="text-left">{isSuccess&& `$${report?.inTrans?.price-report?.outTrans?.price}`}</TableCell>
+            <TableCell  className="text-left">{isSuccess&& `$${report?.outTrans?.price}`}</TableCell>
           </TableRow>
         </TableFooter>
         </Table>

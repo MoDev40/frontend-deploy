@@ -31,6 +31,7 @@ const transActionSlice = createApi({
                 method:"POST",
                 body:newTrans
             }),
+
             invalidatesTags:["trans"]
         }),
        updateTransaction:builder.mutation({
@@ -39,6 +40,7 @@ const transActionSlice = createApi({
                 method:"PUT",
                 body:updated
             }),
+        
             invalidatesTags:["trans"]
         })
     }),
