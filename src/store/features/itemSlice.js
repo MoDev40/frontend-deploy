@@ -39,6 +39,7 @@ const itemSlice = createApi({
                     url:`/fetch/user-items/${counter}/${typeID}`,
                 })
             },
+            skipCache: true,
             providesTags:[],
         }),
     }),
